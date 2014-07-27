@@ -1,4 +1,7 @@
-main <- function(debug=T) {
+main <- function(debug=F) {
+  # Function reads the raw UCI HAR Data set and produces a merged, tidy, analysis-read
+  # data set that contains the mean values of each variable by subject and activity and
+  # is written to the output.csv file
   
   # Define source data path
   source_dir <- './UCI HAR Dataset'
@@ -109,4 +112,5 @@ clean_variable_name <- function(name, debug=F) {
   return(name)
 }
 
-main(debug=T)
+# Call main() with debug=T to get debugging information
+main(debug=F)
