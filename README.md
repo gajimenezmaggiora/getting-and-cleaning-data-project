@@ -23,24 +23,24 @@ steps applied by the run_analysis.R script to clean and transform the raw UCI HA
 This R script is designed to generate a tidy, analysis-ready data set from the raw UCI HAR Dataset.
 The script applies the following steps:
 
-- Merges the raw training and test data sets
-- Attaches meaningful variable names based on the vector features lables described in
+1. Merges the raw training and test data sets
+2. Attaches meaningful variable names based on the vector features lables described in
 the features.txt file.
-- Labels the activity codes using the descriptive activity names listed in the activity_labels.txt file.
-- Subsets the merged data set to include only the variables associated with mean and standard deviation
+3. Labels the activity codes using the descriptive activity names listed in the activity_labels.txt file.
+4. Subsets the merged data set to include only the variables associated with mean and standard deviation
   * This is done by selecting only variable names that contain 'mean' or 'std' key words.
-- Creates a final data set by averaging each variable by subject and activity.  The resulting data set
+5. Creates a final data set by averaging each variable by subject and activity.  The resulting data set
 is written out to the output.csv file.
 
 ### How to execute run_analysis.R
 
-- Download and unzip the UCI HAR Dataset from the following URL:
+1. Download and unzip the UCI HAR Dataset from the following URL:
 
 ```
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 ```
 
   * Make sure the raw UCI HAR Data and run_analysis.R are both in your working directory.
-- Execute run_analysis.R
+2. Execute run_analysis.R
   * The resulting data set 'output.csv' will be written in the current working directory.  A complete
   description of this data set can be found in the CodeBook.md file.
