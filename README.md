@@ -35,12 +35,8 @@ is written out to the output.csv file.
 ### How to execute run_analysis.R
 
 1. Download and unzip the UCI HAR Dataset from the following URL:
-
-```
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-```
-
-  * Make sure the raw UCI HAR Data and run_analysis.R are both in your working directory.
+  * https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+  * NOTE: Make sure the raw UCI HAR Data and run_analysis.R are both in your working directory.
 2. Execute run_analysis.R
   * The resulting data set 'output.csv' will be written in the current working directory.  A complete
   description of this data set can be found in the CodeBook.md file.
